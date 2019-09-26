@@ -13,16 +13,16 @@
 //     });
 //   });
 // }
-  
+
 // place your code below
 const list = document.querySelector('.repository__list--js');
 
-fetch('https://api.github.com/users/atanvarde/repos')
+fetch('https://api.github.com/users/atanvarde/repos?sort=updated&direction=desc')
   .then(resp => resp.json())
   .then(resp => {
     const repos = resp;
-    for ( const repo of repos) {
-      list.innerHTML += `<li>${repo.name} ${repo.html_url}</li>`;
+    for (const repo of repos) {
+      list.innerHTML += `<li><a href="${repo.html_url}">${repo.name}</a></li>`;
     }
   })
   .catch(err => {
