@@ -14,12 +14,60 @@ html {
 
 body {
   color: $lightgrey;
-  background: radial-gradient( #383140, #04030C);
+  background: radial-gradient(#383140, #04030c);
   font-family: "Cormorant Garamond", serif;
   font-size: 16px;
   padding: 16px;
 }
 
+.form-field__input {
+  background: transparent;
+  border: 1px solid $yellow;
+  border-width: thin;
+  color: $lightgrey;
+  font-size: 0.8rem;
+  padding: 8px;
+  &::placeholder {
+    color: $lightgrey;
+  }
+}
+
+.form-field__label {
+  display: inline-block;
+  color: $yellow;
+  font-size: 0.8rem;
+  margin: 0 0 8px;
+}
+
+.form-field__option {
+  background: #383140;
+  color: $lightgrey;
+  font-size: 0.8rem;
+}
+
+.form-field__select {
+  background: transparent;
+  border: 1px solid $yellow;
+  border-width: thin;
+  color: $lightgrey;
+  font-size: 0.8rem;
+  padding: 4px;
+}
+
+.form-field__submit {
+  background: transparent;
+  border: 1px solid $yellow;
+  border-width: thin;
+  color: $lightgrey;
+  font-size: 0.8rem;
+  padding: 8px;
+  width: 100%;
+}
+;
+.form-wrapper {
+  display: flex;
+  justify-content: space-between
+}
 .header {
   display: flex;
 }
