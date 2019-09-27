@@ -29,9 +29,33 @@
 <body>
   <main class="main">
     <header class="header">
-      <img class="header__ghlogo" src="../assets/img/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" alt="github logo showing a black cat on white background" />
+      <img class="header__ghlogo" src="../assets/img/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png"
+        alt="github logo showing a black cat on white background" />
       <h1 class="header__title">Github repositories</h1>
     </header>
+    <form class="form">
+      <p class="form-field">
+        <label class="form-field__label" for="username">Github username</label><br>
+        <input class="form-field__input" type="text" name="username" id="username" placeholder="Please enter username"
+          required>
+      </p>
+      <p class="form-field">
+        <label class="form-field__label" for="sorted">Sorted by</label><br>
+        <select class="form-field__option" name="sorted" id="sorted">
+          <option value="user selected updated">updated</option>
+          <option value="user selected created">created</option>
+          <option value="user selected full name">full name</option>
+        </select>
+      </p>
+      <p class="form-field">
+        <label class="form-field__label" for="direction">Direction</label><br>
+        <select class="form-field__option" name="direction" id="direction">
+          <option value="user selected desc">desc</option>
+          <option value="user selected asc">asc</option>
+        </select>
+      </p>
+      <input class="form__submit" type="submit" value="Send the form">
+    </form>
     <section class="repository">
       <ul class="repository__list repository__list--js">
       </ul>
