@@ -97,6 +97,7 @@ body {
   width: 80%;
   background: rgba(138,134,4,0.3);
   height: 1px;
+  overflow: hidden;
   position: relative;
   &::before {
     animation-duration: 2s;
