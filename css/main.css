@@ -320,7 +320,6 @@ html {
 
 body {
   color: #CAC7D7;
-  background: -webkit-radial-gradient(#383140, #04030c);
   background: -o-radial-gradient(#383140, #04030c);
   background: radial-gradient(#383140, #04030c);
   font-family: "Cormorant Garamond", serif;
