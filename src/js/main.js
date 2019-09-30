@@ -17,15 +17,21 @@
 // place your code below
 const container = document.querySelector('.repository__wrapper--js');
 const noresults = document.querySelector('.repository__none--js');
-const apiUrl = 'https://api.github.com/users/atanvarde/repos?sort=updated&direction=desc';
+const submitBtn = document.querySelector('.form-field__submit--js');
 
-fetch(apiUrl)
+
+submitBtn.addEventListener('click',(e)=> {
+  e.preventDefault();
+  // let username = 
+})
+
+fetch('https://api.github.com/users/atanvarde/repos?sort=updated&direction=desc')
   .then(resp => resp.json())
   .then(resp => {
     const repos = resp;
-    // if (resp = []) {
-    //   noresults.innerText = "No results found";
-    // }
+    if (resp = []) {
+      noresults.innerText = "No results found";
+    }
     container.innerHTML = `<img class="repository__avatar" src="${resp[0].owner.avatar_url}" alt="Repository's owner avatar.">`;
 
     for (const repo of repos) {
