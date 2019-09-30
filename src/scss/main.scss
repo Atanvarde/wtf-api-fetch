@@ -106,7 +106,7 @@ body {
 }
 
 .repository__link {
-  color: $olive;
+  color: $lightgrey;
   text-decoration: none;
 }
 
@@ -115,11 +115,11 @@ body {
   border-radius: 3px;
   border: 1px dotted $yellow;
   margin:0;
-  padding:6px;
+  padding:16px;
   list-style:none;
   color: $yellow;
   line-height: 1.3rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .repository__list-item {
