@@ -332,8 +332,8 @@ body {
   border: 1px solid #F4ED71;
   border-width: thin;
   color: #CAC7D7;
-  font-size: 0.9rem;
-  padding: 8px; }
+  font-size: 1.4rem;
+  padding: 12px; }
   .form-field__input::-webkit-input-placeholder {
     color: #CAC7D7; }
   .form-field__input::-moz-placeholder {
@@ -348,28 +348,29 @@ body {
 .form-field__label {
   display: inline-block;
   color: #F4ED71;
-  font-size: 0.9rem;
-  margin: 0 0 8px; }
+  font-size: 1.4rem;
+  margin: 0 0 10px; }
 
 .form-field__option {
   background: #383140;
-  font-size: 0.9rem; }
+  font-size: 1.4rem; }
 
 .form-field__select {
   background: transparent;
   border: 1px solid #F4ED71;
   border-width: thin;
   color: #CAC7D7;
-  font-size: 0.9rem;
-  padding: 4px; }
+  font-size: 1.4rem;
+  padding: 8px;
+  width: 100%; }
 
 .form-field__submit {
   background: transparent;
   border: 1px solid #F4ED71;
   border-width: thin;
   color: #CAC7D7;
-  font-size: 0.9rem;
-  padding: 8px;
+  font-size: 1.4rem;
+  padding: 10px;
   width: 100%; }
 
 .form-wrapper {
@@ -378,7 +379,8 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 16px; }
 
 .header {
   display: -webkit-box;
@@ -386,13 +388,13 @@ body {
   display: flex; }
 
 .header__title {
-  font-size: 48px;
-  letter-spacing: 1.2px;
-  margin-left: 32px; }
+  font-size: 64px;
+  letter-spacing: 1.3px;
+  margin-left: 38px; }
 
 .header__ghlogo {
-  height: 120px;
-  width: 120px; }
+  height: 160px;
+  width: 160px; }
 
 .main {
   -webkit-box-align: center;
@@ -431,13 +433,12 @@ body {
   border: 1px dotted #F4ED71;
   margin: 0;
   padding: 16px;
+  line-height: 1.9rem;
   list-style: none;
   color: #F4ED71;
-  line-height: 1.3rem;
-  font-size: 0.9rem; }
+  font-size: 1.4rem; }
 
 .repository__list-item {
-  line-height: 1.3rem;
   word-wrap: break-word; }
 
 .separator {
