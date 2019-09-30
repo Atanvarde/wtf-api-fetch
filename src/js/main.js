@@ -15,14 +15,41 @@
 // }
 
 // place your code below
-const list = document.querySelector('.repository__list--js');
+const container = document.querySelector('.repository__wrapper--js');
+const noresults = document.querySelector('.repository__none--js');
+const apiUrl = 'https://api.github.com/users/atanvarde/repos?sort=updated&direction=desc';
 
-fetch('https://api.github.com/users/atanvarde/repos?sort=updated&direction=desc')
+fetch(apiUrl)
   .then(resp => resp.json())
   .then(resp => {
     const repos = resp;
+    // if (resp = []) {
+    //   noresults.innerText = "No results found";
+    // }
+    container.innerHTML = `<img class="repository__avatar" src="${resp[0].owner.avatar_url}" alt="Repository's owner avatar.">`;
+
     for (const repo of repos) {
-      list.innerHTML += `<li><a href="${repo.html_url}">${repo.name}</a></li>`;
+      const {
+        owner: {
+          avatar_url: avatar,
+        },
+        name,
+        description,
+        url,
+        created_at: created,
+        updated_at: updated
+      } = repo;
+
+      // console.log(avatar, name, description, url, created, updated);
+      container.innerHTML += `
+      <div class="repository__container">
+        <ul class="repository__list">
+          <li class="repository__list-item">Name: <a class="repository__link" href="${url}">${name}</a></li>
+          <li class="repository__list-item">Description: ${description ? description : 'There is no description for this repository'}</li>
+          <li class="repository__list-item">Created at: ${created.slice(0, 10)}</li>
+          <li class="repository__list-item">Updated at: ${updated.slice(0, 10)}</li>
+        </ul>
+      </div>`
     }
   })
   .catch(err => {

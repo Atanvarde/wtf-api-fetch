@@ -24,7 +24,8 @@ body {
   background: transparent;
   border: 1px solid $yellow;
   border-width: thin;
-  font-size: 0.8rem;
+  color: $lightgrey;
+  font-size: 0.9rem;
   padding: 8px;
   &::placeholder {
     color: $lightgrey;
@@ -34,13 +35,13 @@ body {
 .form-field__label {
   display: inline-block;
   color: $yellow;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0 0 8px;
 }
 
 .form-field__option {
   background: #383140;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .form-field__select {
@@ -48,7 +49,7 @@ body {
   border: 1px solid $yellow;
   border-width: thin;
   color: $lightgrey;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 4px;
 }
 
@@ -57,7 +58,7 @@ body {
   border: 1px solid $yellow;
   border-width: thin;
   color: $lightgrey;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 8px;
   width: 100%;
 }
@@ -88,6 +89,42 @@ body {
   margin: 50px 0;
   min-height: 100vh;
   width: 100%;
+}
+
+.repository__avatar {
+  display: block;
+  margin: 0 auto;
+  height:180px;
+  width: 180px;
+}
+
+.repository__container {
+  display: block;
+  max-width:900px;
+  width: 80%;
+  margin:40px auto 0 auto;
+}
+
+.repository__link {
+  color: $olive;
+  text-decoration: none;
+}
+
+.repository__list {
+  background: $grey;
+  border-radius: 3px;
+  border: 1px dotted $yellow;
+  margin:0;
+  padding:6px;
+  list-style:none;
+  color: $yellow;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+}
+
+.repository__list-item {
+  line-height: 1.3rem;
+  word-wrap: break-word; 
 }
 
 .separator {
