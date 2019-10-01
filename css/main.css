@@ -391,10 +391,6 @@ body {
   letter-spacing: 1.3px;
   margin-left: 38px; }
 
-.header__ghlogo {
-  height: 160px;
-  width: 160px; }
-
 .main {
   -webkit-box-align: center;
       -ms-flex-align: center;
