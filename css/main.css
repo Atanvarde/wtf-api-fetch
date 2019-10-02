@@ -368,6 +368,7 @@ body {
   border: 1px solid #F4ED71;
   border-width: thin;
   color: #CAC7D7;
+  cursor: pointer;
   font-size: 1.4rem;
   padding: 10px;
   width: 100%; }
