@@ -21,6 +21,7 @@ const submitBtn = document.querySelector('.form-field__submit--js');
 const inputUser = document.querySelector('.form-field__input--js');
 const sortOpt = document.querySelector('.form-field__select-sort--js');
 const directionOpt = document.querySelector('.form-field__select-direction--js');
+const repoHeader = document.querySelector('.repository__header--js');
 
 
 submitBtn.addEventListener('click', (e) => {
@@ -35,6 +36,7 @@ submitBtn.addEventListener('click', (e) => {
         noresults.innerText = "No results found";
       }
       container.innerHTML = `<img class="repository__avatar" src="${resp[0]['owner']['avatar_url']}" alt="Repository's owner avatar.">`;
+      repoHeader.innerHTML = `${username} Github repositories`;
 
       for (const repo of repos) {
         const {
