@@ -419,6 +419,11 @@ body {
   width: 80%;
   margin: 40px auto 0 auto; }
 
+.repository__header {
+  max-width: 900px;
+  width: 80%;
+  margin: 20px auto; }
+
 .repository__link {
   color: #CAC7D7;
   text-decoration: none; }
