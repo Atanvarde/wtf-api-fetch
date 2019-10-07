@@ -18,7 +18,17 @@ body {
   background-image: radial-gradient(#3f3747, #04030c 130%);
   font-family: "Cormorant Garamond", serif;
   font-size: 16px;
-  padding: 16px;
+}
+
+.footer {
+  color: $yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 16px 0;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .form-field__input {
@@ -73,6 +83,7 @@ body {
 
 .header {
   display: flex;
+  margin-top: 50px;
 }
 
 .header__title {
@@ -85,7 +96,6 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 50px 0;
   height: 100vh;
   width: 100%;
 }
@@ -131,9 +141,14 @@ body {
   word-wrap: break-word;
 }
 
+.repository__wrapper {
+  max-width: 900px;
+  width: 80%;
+  margin: 40px auto 0 auto;
+}
+
 .separator {
   border: none;
-  display: block;
   margin: 3rem auto 0 auto;
   width: 80%;
   background: rgba(138, 134, 4, 0.3);
