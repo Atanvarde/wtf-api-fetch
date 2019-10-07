@@ -320,8 +320,9 @@ html {
 
 body {
   color: #CAC7D7;
-  background: -o-radial-gradient(#383140, #04030c);
-  background: radial-gradient(#383140, #04030c);
+  background-color: #04030c;
+  background-image: -o-radial-gradient(#3f3747, #04030c 130%);
+  background-image: radial-gradient(#3f3747, #04030c 130%);
   font-family: "Cormorant Garamond", serif;
   font-size: 16px;
   padding: 16px; }
@@ -404,7 +405,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 50px 0;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%; }
 
 .repository__avatar {
@@ -429,7 +430,7 @@ body {
   text-decoration: none; }
 
 .repository__list {
-  background: #383140;
+  background: #3f3747;
   border-radius: 3px;
   border: 1px dotted #F4ED71;
   margin: 0;
