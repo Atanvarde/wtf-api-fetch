@@ -327,20 +327,22 @@ body {
   font-size: 16px; }
 
 .footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #F4ED71;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.3rem;
+  margin-top: 30px;
   padding: 16px 0;
-  width: 100%;
-  margin-top: 30px; }
+  width: 100%; }
+  .footer__icon {
+    margin: 0 10px 0 10px; }
 
 .form-field__input {
   background: transparent;
@@ -425,8 +427,8 @@ body {
 
 .repository__avatar {
   display: block;
-  margin: 0 auto;
   height: 180px;
+  margin: 0 auto;
   width: 180px; }
 
 .repository__container {
@@ -436,9 +438,9 @@ body {
   margin: 40px auto 0 auto; }
 
 .repository__header {
+  margin: 40px auto;
   max-width: 900px;
-  width: 80%;
-  margin: 40px auto; }
+  width: 80%; }
 
 .repository__link {
   color: #CAC7D7;
@@ -448,29 +450,29 @@ body {
   background: #3f3747;
   border-radius: 3px;
   border: 1px dotted #F4ED71;
-  margin: 0;
-  padding: 16px;
+  color: #F4ED71;
+  font-size: 1.4rem;
   line-height: 1.9rem;
   list-style: none;
-  color: #F4ED71;
-  font-size: 1.4rem; }
+  margin: 0;
+  padding: 16px; }
 
 .repository__list-item {
   word-wrap: break-word; }
 
 .repository__wrapper {
+  margin: 40px auto 0 auto;
   max-width: 900px;
-  width: 80%;
-  margin: 40px auto 0 auto; }
+  width: 80%; }
 
 .separator {
-  border: none;
-  margin: 3rem auto 0 auto;
-  width: 80%;
   background: rgba(138, 134, 4, 0.3);
+  border: none;
   height: 1px;
+  margin: 3rem auto 0 auto;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  width: 80%; }
   .separator::before {
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
