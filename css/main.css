@@ -440,7 +440,7 @@ body {
 .repository__header {
   margin: 40px auto;
   max-width: 900px;
-  width: 80%; }
+  text-align: center; }
 
 .repository__link {
   color: #CAC7D7;
@@ -459,6 +459,9 @@ body {
 
 .repository__list-item {
   word-wrap: break-word; }
+
+.repository__none {
+  font-size: 1.4rem; }
 
 .repository__wrapper {
   margin: 40px auto 0 auto;
