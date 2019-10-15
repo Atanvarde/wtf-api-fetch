@@ -34,24 +34,24 @@ submitBtn.addEventListener('click', (e) => {
       const repos = resp;
       if (resp.length <= 0) {
         noresults.innerText = "No results found";
-      }
-      container.innerHTML = `<img class="repository__avatar" src="${resp[0]['owner']['avatar_url']}" alt="Repository's owner avatar.">`;
-      repoHeader.innerHTML = `${username} Github repositories`;
+      } else {
+        container.innerHTML = `<img class="repository__avatar" src="${resp[0]['owner']['avatar_url']}" alt="Repository's owner avatar.">`;
+        repoHeader.innerHTML = `${username} Github repositories`;
 
-      for (const repo of repos) {
-        const {
-          owner: {
-            avatar_url: avatar,
-          },
-          name,
-          description,
-          url,
-          created_at: created,
-          updated_at: updated
-        } = repo;
+        for (const repo of repos) {
+          const {
+            owner: {
+              avatar_url: avatar,
+            },
+            name,
+            description,
+            url,
+            created_at: created,
+            updated_at: updated
+          } = repo;
 
-        // console.log(avatar, name, description, url, created, updated);
-        container.innerHTML += `
+          // console.log(avatar, name, description, url, created, updated);
+          container.innerHTML += `
       <div class="repository__container">
         <ul class="repository__list">
           <li class="repository__list-item">Name: <a class="repository__link" href="${url}">${name}</a></li>
@@ -60,6 +60,7 @@ submitBtn.addEventListener('click', (e) => {
           <li class="repository__list-item">Updated at: ${updated.slice(0, 10)}</li>
         </ul>
       </div>`
+        }
       }
     })
     .catch(err => {

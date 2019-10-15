@@ -30,12 +30,12 @@ body {
   padding: 16px 0;
   width: 100%;
   &__icon {
-    margin:0 10px 0 10px;
+    margin: 0 10px 0 10px;
   }
 }
 
 .form-field__input {
-  background: transparent;  
+  background: transparent;
   border: 1px solid $yellow;
   border-width: thin;
   color: $lightgrey;
@@ -120,7 +120,7 @@ body {
 .repository__header {
   margin: 40px auto;
   max-width: 900px;
-  width: 80%;
+  text-align: center;
 }
 
 .repository__link {
@@ -142,6 +142,10 @@ body {
 
 .repository__list-item {
   word-wrap: break-word;
+}
+
+.repository__none {
+  font-size: 1.4rem;
 }
 
 .repository__wrapper {
