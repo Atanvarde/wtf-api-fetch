@@ -19,8 +19,8 @@ const container = document.querySelector('.repository__wrapper--js');
 const noresults = document.querySelector('.repository__none--js');
 const submitBtn = document.querySelector('.form-field__submit--js');
 const inputUser = document.querySelector('.form-field__input--js');
-const sortOpt = document.querySelector('.form-field__select-sort--js');
-const directionOpt = document.querySelector('.form-field__select-direction--js');
+const sortOpt = document.querySelector('.form-field__select--sort-js');
+const directionOpt = document.querySelector('.form-field__select--direction-js');
 const repoHeader = document.querySelector('.repository__header--js');
 
 
