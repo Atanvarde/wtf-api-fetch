@@ -21,18 +21,21 @@ body {
 }
 
 .footer {
+  align-items: center;
   color: $yellow;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.3rem;
+  justify-content: center;
+  margin-top: 30px;
   padding: 16px 0;
   width: 100%;
-  margin-top: 30px;
+  &__icon {
+    margin:0 10px 0 20px;
+  }
 }
 
 .form-field__input {
-  background: transparent;
+  background: transparent;  
   border: 1px solid $yellow;
   border-width: thin;
   color: $lightgrey;
@@ -102,8 +105,8 @@ body {
 
 .repository__avatar {
   display: block;
-  margin: 0 auto;
   height: 180px;
+  margin: 0 auto;
   width: 180px;
 }
 
@@ -115,9 +118,9 @@ body {
 }
 
 .repository__header {
+  margin: 40px auto;
   max-width: 900px;
   width: 80%;
-  margin: 40px auto;
 }
 
 .repository__link {
@@ -129,12 +132,12 @@ body {
   background: $grey;
   border-radius: 3px;
   border: 1px dotted $yellow;
-  margin: 0;
-  padding: 16px;
-  line-height: 1.9rem;
-  list-style: none;
   color: $yellow;
   font-size: 1.4rem;
+  line-height: 1.9rem;
+  list-style: none;
+  margin: 0;
+  padding: 16px;
 }
 
 .repository__list-item {
@@ -142,19 +145,19 @@ body {
 }
 
 .repository__wrapper {
+  margin: 40px auto 0 auto;
   max-width: 900px;
   width: 80%;
-  margin: 40px auto 0 auto;
 }
 
 .separator {
-  border: none;
-  margin: 3rem auto 0 auto;
-  width: 80%;
   background: rgba(138, 134, 4, 0.3);
+  border: none;
   height: 1px;
+  margin: 3rem auto 0 auto;
   overflow: hidden;
   position: relative;
+  width: 80%;
   &::before {
     animation-duration: 2s;
     animation-timing-function: ease;
